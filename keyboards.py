@@ -55,7 +55,7 @@ def _promo_rows(bot_username="", channel_username="", instagram="", extra_bot=""
     if channel_username:
         rows.append([InlineKeyboardButton("📢 Kanalga o'tish", url=f"https://t.me/{channel_username}")])
     if extra_bot:
-        rows.append([InlineKeyboardButton("🎬 Yana bir bot", url=f"https://t.me/{extra_bot}")])
+        rows.append([InlineKeyboardButton("📥 instasaved", url=f"https://t.me/{extra_bot}")])
     if instagram:
         rows.append([InlineKeyboardButton("📸 Instagram", url=_insta_url(instagram))])
     return rows
@@ -92,7 +92,7 @@ def channel_post_keyboard(movie_code="", bot_username="",
     if channel_username:
         rows.append([InlineKeyboardButton("📢 Kanalga o'tish", url=f"https://t.me/{channel_username}")])
     if extra_bot:
-        rows.append([InlineKeyboardButton("🤖 Yana bir bot", url=f"https://t.me/{extra_bot}")])
+        rows.append([InlineKeyboardButton("📥 instasaved", url=f"https://t.me/{extra_bot}")])
     if instagram:
         rows.append([InlineKeyboardButton("📸 Instagram", url=_insta_url(instagram))])
     return InlineKeyboardMarkup(rows) if rows else None
